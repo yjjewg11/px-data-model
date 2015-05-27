@@ -1,6 +1,8 @@
 package com.company.news.jsonform;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 训练计划创建或修改表单
@@ -18,6 +20,7 @@ public class TrainingPlanJsonform {
   private Integer runKM;//距离（单位KM），计划跑多少公里
   private Integer run_times;//计划跑多少公里时间要求
   private Double price;//发布价格
+  private List<TimeScheduleRelationJsonform> times_list=new ArrayList();//时间段列表
   public Long getId() {
     return id;
   }
@@ -77,6 +80,12 @@ public class TrainingPlanJsonform {
   }
   public void setPrice(Double price) {
     this.price = price;
+  }
+  public List<TimeScheduleRelationJsonform> getTimes_list() {
+    return times_list;
+  }
+  public void setTimes_list(List<TimeScheduleRelationJsonform> times_list) {
+    this.times_list = times_list;
   }
   
 }

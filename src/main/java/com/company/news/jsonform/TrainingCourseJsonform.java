@@ -1,6 +1,7 @@
 package com.company.news.jsonform;
 
-import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 训练课程表(教练用户发起，1对多）
@@ -17,6 +18,7 @@ public class TrainingCourseJsonform extends AbstractJsonform{
   private String context;//授课内容，自由填写。不限字数
   private String place;//授课地点。40字符
   private Double price;//[必填]发布价格 1~9999
+  private List<TimeScheduleRelationJsonform> time_list=new ArrayList();//时间段列表
   
   
   public Long getId() {
@@ -107,6 +109,16 @@ public class TrainingCourseJsonform extends AbstractJsonform{
 
   public void setId(Long id) {
     this.id = id;
+  }
+
+
+  public List<TimeScheduleRelationJsonform> getTime_list() {
+    return time_list;
+  }
+
+
+  public void setTime_list(List<TimeScheduleRelationJsonform> time_list) {
+    this.time_list = time_list;
   }
 
 }

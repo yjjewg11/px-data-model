@@ -1,6 +1,10 @@
 package com.company.news.vo;
 
+import com.company.news.jsonform.TimeScheduleRelationJsonform;
+
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 训练课程表(教练用户发起，1对多）
@@ -39,7 +43,18 @@ public class TrainingCourseVO extends AbstactVO {
   
   private Long read_count;//被人阅读次数统计
 
-  public Long getId() {
+
+    private List<TimeScheduleRelationVO> time_list=new ArrayList();//时间段列表
+
+    public List<TimeScheduleRelationVO> getTime_list() {
+        return time_list;
+    }
+
+    public void setTime_list(List<TimeScheduleRelationVO> time_list) {
+        this.time_list = time_list;
+    }
+
+    public Long getId() {
     // TODO Auto-generated method stub
     return id;
   }
