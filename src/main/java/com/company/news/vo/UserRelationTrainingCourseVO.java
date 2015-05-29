@@ -11,11 +11,10 @@ import java.sql.Timestamp;
  */
 
 public class UserRelationTrainingCourseVO extends AbstactVO {
-
     private Long id;//主键
     
-    private Long user_id;//关联普通用户id
-    
+    private Long create_userid;//关联普通用户id
+
     private Long course_id;//关联课程id
     
     private Long time_schedule_id;//关联课程时段id
@@ -24,7 +23,7 @@ public class UserRelationTrainingCourseVO extends AbstactVO {
     
     private Timestamp create_time;//关联时间　　　　
     
-    private Integer status;//订单状态：2：已接单，3：待支付，4支付完成，4：课程完成,5:关闭。
+    private Integer status;//订单状态：2：已预订，3：待支付，4：支付完成，5：课程完成,6:关闭。
     
     private Timestamp receiving_order_time;//接单时间
     
@@ -38,6 +37,20 @@ public class UserRelationTrainingCourseVO extends AbstactVO {
     
     private Timestamp  appraise_time;//时间。
 
+    //--课程表的必要信息
+    
+    private String course_title;//课程名称【必填】，20字符
+    
+    private Integer course_time_length;//课程时长【必填】，单位分钟
+    
+    private Integer course_difficulty_degree;//课程难度。1-5星。
+    
+    private String course_place;//授课地点。40字符
+    
+    private Double course_price;//[必填]发布价格 1~9999
+    
+    private Long course_coach_id;//教练id
+
     public Long getId() {
         return id;
     }
@@ -46,12 +59,12 @@ public class UserRelationTrainingCourseVO extends AbstactVO {
         this.id = id;
     }
 
-    public Long getUser_id() {
-        return user_id;
+    public Long getCreate_userid() {
+        return create_userid;
     }
 
-    public void setUser_id(Long user_id) {
-        this.user_id = user_id;
+    public void setCreate_userid(Long create_userid) {
+        this.create_userid = create_userid;
     }
 
     public Long getCourse_id() {
@@ -140,5 +153,53 @@ public class UserRelationTrainingCourseVO extends AbstactVO {
 
     public void setAppraise_time(Timestamp appraise_time) {
         this.appraise_time = appraise_time;
+    }
+
+    public String getCourse_title() {
+        return course_title;
+    }
+
+    public void setCourse_title(String course_title) {
+        this.course_title = course_title;
+    }
+
+    public Integer getCourse_time_length() {
+        return course_time_length;
+    }
+
+    public void setCourse_time_length(Integer course_time_length) {
+        this.course_time_length = course_time_length;
+    }
+
+    public Integer getCourse_difficulty_degree() {
+        return course_difficulty_degree;
+    }
+
+    public void setCourse_difficulty_degree(Integer course_difficulty_degree) {
+        this.course_difficulty_degree = course_difficulty_degree;
+    }
+
+    public String getCourse_place() {
+        return course_place;
+    }
+
+    public void setCourse_place(String course_place) {
+        this.course_place = course_place;
+    }
+
+    public Double getCourse_price() {
+        return course_price;
+    }
+
+    public void setCourse_price(Double course_price) {
+        this.course_price = course_price;
+    }
+
+    public Long getCourse_coach_id() {
+        return course_coach_id;
+    }
+
+    public void setCourse_coach_id(Long course_coach_id) {
+        this.course_coach_id = course_coach_id;
     }
 }
