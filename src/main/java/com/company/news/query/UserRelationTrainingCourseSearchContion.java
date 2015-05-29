@@ -4,6 +4,10 @@ public class UserRelationTrainingCourseSearchContion extends NSearchContion {
   private Long user_id;//关联普通用户id
   private Long course_id;//关联课程id
   private Long time_schedule_id;//关联课程时段id
+  private Long coach_id;//教练id
+  
+  
+  
   public Long getUser_id() {
     return user_id;
   }
@@ -21,6 +25,12 @@ public class UserRelationTrainingCourseSearchContion extends NSearchContion {
   }
   public void setTime_schedule_id(Long time_schedule_id) {
     this.time_schedule_id = time_schedule_id;
+  }
+  public Long getCoach_id() {
+    return coach_id;
+  }
+  public void setCoach_id(Long coach_id) {
+    this.coach_id = coach_id;
   }
 
 }
