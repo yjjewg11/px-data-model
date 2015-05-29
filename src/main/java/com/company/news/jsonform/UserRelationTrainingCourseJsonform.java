@@ -1,10 +1,13 @@
 package com.company.news.jsonform;
 
 
+import java.sql.Timestamp;
+
 public class UserRelationTrainingCourseJsonform extends AbstractJsonform {
   private Long id;//主键
   private Long course_id;//关联课程id
   private Long time_schedule_id;//关联课程时段id
+    private Timestamp course_time;//课程上课时间
   public Long getId() {
     return id;
   }
@@ -23,6 +26,12 @@ public class UserRelationTrainingCourseJsonform extends AbstractJsonform {
   public void setTime_schedule_id(Long time_schedule_id) {
     this.time_schedule_id = time_schedule_id;
   }
-  
-  
+
+    public Timestamp getCourse_time() {
+        return course_time;
+    }
+
+    public void setCourse_time(Timestamp course_time) {
+        this.course_time = course_time;
+    }
 }
