@@ -5,157 +5,140 @@ import java.sql.Timestamp;
 
 
 public class UserInfoReturn implements java.io.Serializable{
-    private String loginname;//登录名。手机号码或邮箱
-    private String name;//昵称
-    private Timestamp logintime;//最后一次登录时间。
-    private String tel;// 电话号码。
-    private String real_name;// 真实姓名
-    private String identity_card;// 身份证号
-    private String real_name_verify;//实名认证。默认0，0:没验证。1:验证。2：提交验证
-    private String identity_card_imgurl;//上传身份证图片地址。用于认证
-    private Integer sex;// 0:男,1:女
-    private String city;// 所在城市
-    private String head_imgurl;//头像地址。
-    private Integer type;//用户类型。0:普通用户(默认)；1：跑步教练（马拉松教练）
-    private String context;//简介，自由填写（300个字符）
-    private Integer trainer_status;//教练工作状态：。1：可以接单。2：暂停接单。
-    private String marathon_imgurl;//马拉松认证图片地址.
-    private String marathon_verify;//马拉松认证状态。默认0，0:没验证。1:验证。2：提交验证
-    private Timestamp birth;//出生年月日
+	private String uuid;
+	
+	private String loginname;// 登录名。手机号码或邮箱
+	
+	private String name;// 昵称
+	
+	private String password;// 密码，md5加密。（UTF-8）
+	
+	private String tel;// 电话号码。
+	
+	private Integer tel_verify;// 电话号码，验证。默认0，0:没验证。1:验证，2：提交验证，3.验证失败
+	
+	private Integer sex;// 0:男,1:女
+	
+	private Integer disable;// 是否被管理员封号。0：不封。1：封号，不允许登录。
+	
+	private Timestamp login_time;// 最后一次登录时间。
+	
+	private Timestamp create_time;
+	
+	
+	private Timestamp last_login_time;// 上一次登录时间
+	public Timestamp getLast_login_time() {
+		return last_login_time;
+	}
 
-    public Timestamp getBirth() {
-        return birth;
-    }
+	public void setLast_login_time(Timestamp last_login_time) {
+		this.last_login_time = last_login_time;
+	}
 
-    public void setBirth(Timestamp birth) {
-        this.birth = birth;
-    }
+	
+	public String getUuid() {
+		return uuid;
+	}
 
-    public String getLoginname() {
-        return loginname;
-    }
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
 
-    public void setLoginname(String loginname) {
-        this.loginname = loginname;
-    }
 
-    public String getName() {
-        return name;
-    }
+	private Integer type;// 用户类型。0:普通用户(默认)；1:组织管理员
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	
+	private String email;// email
 
-    public Timestamp getLogintime() {
-        return logintime;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setLogintime(Timestamp logintime) {
-        this.logintime = logintime;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String getTel() {
-        return tel;
-    }
 
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
 
-    public String getReal_name() {
-        return real_name;
-    }
+	public String getLoginname() {
+		return loginname;
+	}
 
-    public void setReal_name(String real_name) {
-        this.real_name = real_name;
-    }
+	public void setLoginname(String loginname) {
+		this.loginname = loginname;
+	}
 
-    public String getIdentity_card() {
-        return identity_card;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setIdentity_card(String identity_card) {
-        this.identity_card = identity_card;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public String getReal_name_verify() {
-        return real_name_verify;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setReal_name_verify(String real_name_verify) {
-        this.real_name_verify = real_name_verify;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public Integer getSex() {
-        return sex;
-    }
+	public String getTel() {
+		return tel;
+	}
 
-    public void setSex(Integer sex) {
-        this.sex = sex;
-    }
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
 
-    public String getCity() {
-        return city;
-    }
+	public Integer getTel_verify() {
+		return tel_verify;
+	}
 
-    public void setCity(String city) {
-        this.city = city;
-    }
+	public void setTel_verify(Integer tel_verify) {
+		this.tel_verify = tel_verify;
+	}
 
-    public String getHead_imgurl() {
-        return head_imgurl;
-    }
+	public Integer getSex() {
+		return sex;
+	}
 
-    public void setHead_imgurl(String head_imgurl) {
-        this.head_imgurl = head_imgurl;
-    }
+	public void setSex(Integer sex) {
+		this.sex = sex;
+	}
 
-    public Integer getType() {
-        return type;
-    }
+	public Integer getDisable() {
+		return disable;
+	}
 
-    public void setType(Integer type) {
-        this.type = type;
-    }
+	public void setDisable(Integer disable) {
+		this.disable = disable;
+	}
 
-    public String getContext() {
-        return context;
-    }
 
-    public void setContext(String context) {
-        this.context = context;
-    }
 
-    public Integer getTrainer_status() {
-        return trainer_status;
-    }
+	public Timestamp getLogin_time() {
+		return login_time;
+	}
 
-    public void setTrainer_status(Integer trainer_status) {
-        this.trainer_status = trainer_status;
-    }
+	public void setLogin_time(Timestamp loginTime) {
+		login_time = loginTime;
+	}
 
-    public String getMarathon_imgurl() {
-        return marathon_imgurl;
-    }
+	public Integer getType() {
+		return type;
+	}
 
-    public void setMarathon_imgurl(String marathon_imgurl) {
-        this.marathon_imgurl = marathon_imgurl;
-    }
+	public void setType(Integer type) {
+		this.type = type;
+	}
 
-    public String getMarathon_verify() {
-        return marathon_verify;
-    }
+	public Timestamp getCreate_time() {
+		return create_time;
+	}
 
-    public void setMarathon_verify(String marathon_verify) {
-        this.marathon_verify = marathon_verify;
-    }
-
-    public String getIdentity_card_imgurl() {
-      return identity_card_imgurl;
-    }
-
-    public void setIdentity_card_imgurl(String identity_card_imgurl) {
-      this.identity_card_imgurl = identity_card_imgurl;
-    }
+	public void setCreate_time(Timestamp createTime) {
+		create_time = createTime;
+	}
 }
