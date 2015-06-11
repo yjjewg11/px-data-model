@@ -9,6 +9,14 @@ package com.company.news.jsonform;
  * 
  */
 public class GroupRegJsonform extends UserRegJsonform {
+	private String uuid;
+	public String getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
 
 	private String brand_name;// 品牌名称
 	private String company_name;// 公司全称

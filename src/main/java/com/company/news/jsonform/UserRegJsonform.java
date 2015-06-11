@@ -20,8 +20,10 @@ public class UserRegJsonform extends AbstractJsonform {
 
 	private String group_uuid;// 关联组织UUID
 	
-	private Integer type;// 用户类型。0:普通用户(默认)；1:组织管理员
+	private Integer type;
 	
+
+
 	public Integer getType() {
 		return type;
 	}
