@@ -3,6 +3,7 @@ package com.company.news.jsonform;
 
 
 
+
 /**
  * 用户注册，body传入json数据转对象。
  * 
@@ -19,26 +20,36 @@ public class ClassRegJsonform extends AbstractJsonform {
 
 	private String teacher;// email
 	
-
-	  private String createUser;//
-
-	  public String getCreateUser() {
-		return createUser;
+	private String uuid;// 昵称
+	
+	  public String getUuid() {
+		return uuid;
 	}
 
-	public void setCreateUser(String createUser) {
-		this.createUser = createUser;
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
 	}
 
-	public String getCreateUseruuid() {
-		return createUseruuid;
+
+	  private String create_user;//品牌名称
+
+	  private String create_useruuid;//公司全称/
+
+	public String getCreate_user() {
+		return create_user;
 	}
 
-	public void setCreateUseruuid(String createUseruuid) {
-		this.createUseruuid = createUseruuid;
+	public void setCreate_user(String create_user) {
+		this.create_user = create_user;
 	}
 
-	private String createUseruuid;//
+	public String getCreate_useruuid() {
+		return create_useruuid;
+	}
+
+	public void setCreate_useruuid(String create_useruuid) {
+		this.create_useruuid = create_useruuid;
+	}
 
 	public String getName() {
 		return name;
