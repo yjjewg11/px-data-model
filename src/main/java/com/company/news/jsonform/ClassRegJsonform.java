@@ -20,6 +20,27 @@ public class ClassRegJsonform extends AbstractJsonform {
 
 	private String teacher;// email
 	
+	private String headTeacher_name;// 电话号码。【必填】
+
+	private String teacher_name;// email
+	
+	public String getHeadTeacher_name() {
+		return headTeacher_name;
+	}
+
+	public void setHeadTeacher_name(String headTeacher_name) {
+		this.headTeacher_name = headTeacher_name;
+	}
+
+	public String getTeacher_name() {
+		return teacher_name;
+	}
+
+	public void setTeacher_name(String teacher_name) {
+		this.teacher_name = teacher_name;
+	}
+
+
 	private String uuid;// 昵称
 	
 	  public String getUuid() {
