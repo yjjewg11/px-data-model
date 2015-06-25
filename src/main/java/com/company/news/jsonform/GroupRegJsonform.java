@@ -24,8 +24,16 @@ public class GroupRegJsonform extends UserRegJsonform {
 	private String map_point;// 坐标
 	private String link_tel;// 电话
 	private Integer type;// 机构类型
+	private String description;//  
 
 
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
 	public Integer getType() {
 		return type;
