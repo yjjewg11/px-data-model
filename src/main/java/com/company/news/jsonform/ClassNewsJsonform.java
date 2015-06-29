@@ -22,6 +22,16 @@ public class ClassNewsJsonform extends AbstractJsonform {
 
 	private String content;// 公司全称
 	private String create_user;// 品牌名称
+	
+	private Integer count;
+
+	public Integer getCount() {
+		return count;
+	}
+
+	public void setCount(Integer count) {
+		this.count = count;
+	}
 
 	public String getCreate_user() {
 		return create_user;
