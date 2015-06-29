@@ -22,7 +22,15 @@ public class UserRegJsonform extends AbstractJsonform {
 	
 	private Integer type;
 	
+	private String office;// office
 
+	public String getOffice() {
+		return office;
+	}
+
+	public void setOffice(String office) {
+		this.office = office;
+	}
 
 	public Integer getType() {
 		return type;
