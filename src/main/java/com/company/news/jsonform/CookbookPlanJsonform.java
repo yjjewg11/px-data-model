@@ -28,7 +28,15 @@ public class CookbookPlanJsonform extends AbstractJsonform {
 	  
 	  private String plandateStr;
 
+	  private String analysis;
 
+	public String getAnalysis() {
+		return analysis;
+	}
+
+	public void setAnalysis(String analysis) {
+		this.analysis = analysis;
+	}
 
 	public String getPlandateStr() {
 		return plandateStr;
