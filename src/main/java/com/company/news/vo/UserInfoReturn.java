@@ -17,7 +17,6 @@ public class UserInfoReturn implements java.io.Serializable{
 	
 	private Integer tel_verify;// 电话号码，验证。默认0，0:没验证。1:验证，2：提交验证，3.验证失败
 	
-	private Integer sex;// 0:男,1:女
 	
 	private Integer disable;// 是否被管理员封号。0：不封。1：封号，不允许登录。
 	
@@ -100,13 +99,6 @@ public class UserInfoReturn implements java.io.Serializable{
 		this.tel_verify = tel_verify;
 	}
 
-	public Integer getSex() {
-		return sex;
-	}
-
-	public void setSex(Integer sex) {
-		this.sex = sex;
-	}
 
 	public Integer getDisable() {
 		return disable;

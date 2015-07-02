@@ -9,10 +9,20 @@ package com.company.news.jsonform;
  * 
  */
 public class UserRegJsonform extends AbstractJsonform {
+	private String uuid;// 昵称
+	public String getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
 
 	private String name;// 昵称
 
 	private String password;// 密码，md5加密。（UTF-8）区分大小写
+	
+	private String oldpassword;// 原密码，用作密码修改用
 
 	private String tel;// 电话号码。【必填】
 
@@ -23,6 +33,24 @@ public class UserRegJsonform extends AbstractJsonform {
 	private Integer type;
 	
 	private String office;// office
+	
+	private Integer Sex;
+
+	public Integer getSex() {
+		return Sex;
+	}
+
+	public void setSex(Integer sex) {
+		Sex = sex;
+	}
+
+	public String getOldpassword() {
+		return oldpassword;
+	}
+
+	public void setOldpassword(String oldpassword) {
+		this.oldpassword = oldpassword;
+	}
 
 	public String getOffice() {
 		return office;
