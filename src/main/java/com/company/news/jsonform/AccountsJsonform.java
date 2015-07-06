@@ -14,11 +14,34 @@ public class AccountsJsonform extends AbstractJsonform {
 	private String classuuid;// 品牌名称
 	private String groupuuid;// 品牌名称
 	private String title;// 品牌名称
+	  private String create_user;//
 
+
+
+	public String getCreate_user() {
+		return create_user;
+	}
+	public void setCreate_user(String create_user) {
+		this.create_user = create_user;
+	}
+	public String getCreate_useruuid() {
+		return create_useruuid;
+	}
+	public void setCreate_useruuid(String create_useruuid) {
+		this.create_useruuid = create_useruuid;
+	}
+	private String create_useruuid;//
 	private String description;// 公司全称
 	private String accounts_timeStr;
 	private Double num;
+	private Integer type;
 
+	public Integer getType() {
+		return type;
+	}
+	public void setType(Integer type) {
+		this.type = type;
+	}
 	public String getUuid() {
 		return uuid;
 	}
