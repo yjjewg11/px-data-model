@@ -23,8 +23,26 @@ public class UserInfoReturn implements java.io.Serializable{
 	private Timestamp login_time;// 最后一次登录时间。
 	
 	private Timestamp create_time;
+	private Integer sex;// 0:男,1:女
+	private String office;// 职位。
 	
-	
+	public String getOffice() {
+		return office;
+	}
+
+	public void setOffice(String office) {
+		this.office = office;
+	}
+
+	public Integer getSex() {
+		return sex;
+	}
+
+	public void setSex(Integer sex) {
+		this.sex = sex;
+	}
+
+
 	private Timestamp last_login_time;// 上一次登录时间
 	public Timestamp getLast_login_time() {
 		return last_login_time;
