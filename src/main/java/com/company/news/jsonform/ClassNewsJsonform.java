@@ -1,5 +1,9 @@
 package com.company.news.jsonform;
 
+import java.sql.Timestamp;
+import java.util.List;
+
+
 
 
 
@@ -22,6 +26,43 @@ public class ClassNewsJsonform extends AbstractJsonform {
 
 	private String content;// 公司全称
 	private String create_user;// 品牌名称
+	private Timestamp create_time;// 创建时间
+	private Timestamp reply_time;// 创建时间
+	
+	public List getDianzanList() {
+		return dianzanList;
+	}
+
+	public void setDianzanList(List dianzanList) {
+		this.dianzanList = dianzanList;
+	}
+
+	private List dianzanList;// 公司全称
+	public Timestamp getCreate_time() {
+		return create_time;
+	}
+
+	public void setCreate_time(Timestamp create_time) {
+		this.create_time = create_time;
+	}
+
+	public Timestamp getReply_time() {
+		return reply_time;
+	}
+
+	public void setReply_time(Timestamp reply_time) {
+		this.reply_time = reply_time;
+	}
+
+	public Timestamp getUpdate_time() {
+		return update_time;
+	}
+
+	public void setUpdate_time(Timestamp update_time) {
+		this.update_time = update_time;
+	}
+
+	private Timestamp update_time;// 创建时间
 	
 	private Integer count;
 
