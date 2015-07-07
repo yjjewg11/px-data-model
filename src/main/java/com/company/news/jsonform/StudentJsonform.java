@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 
 
+
 /**
  * 用户注册，body传入json数据转对象。
  * 
@@ -62,7 +63,96 @@ public class StudentJsonform extends AbstractJsonform {
 	private String other_tel;// email
 
 	
+	private String ma_name;// email
+
 	
+	private String ba_name;// email
+
+	
+	private String address;// email
+
+	
+	private String note;// email
+	
+	
+	private String idcard;// email
+	
+	
+	private String ma_work;// email
+
+	
+	private String ba_work;// email
+	
+	public String getMa_name() {
+		return ma_name;
+	}
+
+
+	public void setMa_name(String ma_name) {
+		this.ma_name = ma_name;
+	}
+
+
+	public String getBa_name() {
+		return ba_name;
+	}
+
+
+	public void setBa_name(String ba_name) {
+		this.ba_name = ba_name;
+	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	public String getNote() {
+		return note;
+	}
+
+
+	public void setNote(String note) {
+		this.note = note;
+	}
+
+
+	public String getIdcard() {
+		return idcard;
+	}
+
+
+	public void setIdcard(String idcard) {
+		this.idcard = idcard;
+	}
+
+
+	public String getMa_work() {
+		return ma_work;
+	}
+
+
+	public void setMa_work(String ma_work) {
+		this.ma_work = ma_work;
+	}
+
+
+	public String getBa_work() {
+		return ba_work;
+	}
+
+
+	public void setBa_work(String ba_work) {
+		this.ba_work = ba_work;
+	}
+
+
 	public String getLoginname() {
 		return loginname;
 	}
