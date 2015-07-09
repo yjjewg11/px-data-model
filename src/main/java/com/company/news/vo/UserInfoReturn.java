@@ -25,7 +25,16 @@ public class UserInfoReturn implements java.io.Serializable{
 	private Timestamp create_time;
 	private Integer sex;// 0:男,1:女
 	private String office;// 职位。
+	private String img;// 
 	
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
+	}
+
 	public String getOffice() {
 		return office;
 	}
