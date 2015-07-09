@@ -34,6 +34,17 @@ public class UserRegJsonform extends AbstractJsonform {
 	
 	private String office;// office
 	
+	private String smscode;// smscode
+	
+	
+	public String getSmscode() {
+		return smscode;
+	}
+
+	public void setSmscode(String smscode) {
+		this.smscode = smscode;
+	}
+
 	private String img;// 头像
 	
 	private Integer Sex;
