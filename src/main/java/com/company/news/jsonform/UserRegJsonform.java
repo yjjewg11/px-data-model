@@ -34,10 +34,20 @@ public class UserRegJsonform extends AbstractJsonform {
 	
 	private String office;// office
 	
+	private String img;// 头像
+	
 	private Integer Sex;
 
 	public Integer getSex() {
 		return Sex;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 
 	public void setSex(Integer sex) {
