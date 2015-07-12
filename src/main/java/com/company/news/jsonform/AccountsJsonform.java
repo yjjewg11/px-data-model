@@ -15,8 +15,12 @@ public class AccountsJsonform extends AbstractJsonform {
 	private String groupuuid;// 品牌名称
 	private String title;// 品牌名称
 	  private String create_user;//
-
-
+	private String create_useruuid;//
+	private String description;// 公司全称
+	private String accounts_timeStr;
+	private Double num;
+	private Integer type;
+	private String  studentuuid;
 
 	public String getCreate_user() {
 		return create_user;
@@ -30,12 +34,6 @@ public class AccountsJsonform extends AbstractJsonform {
 	public void setCreate_useruuid(String create_useruuid) {
 		this.create_useruuid = create_useruuid;
 	}
-	private String create_useruuid;//
-	private String description;// 公司全称
-	private String accounts_timeStr;
-	private Double num;
-	private Integer type;
-
 	public Integer getType() {
 		return type;
 	}
@@ -96,6 +94,12 @@ public class AccountsJsonform extends AbstractJsonform {
 
 	public void setNum(Double num) {
 		this.num = num;
+	}
+	public String getStudentuuid() {
+		return studentuuid;
+	}
+	public void setStudentuuid(String studentuuid) {
+		this.studentuuid = studentuuid;
 	}
 
 }
