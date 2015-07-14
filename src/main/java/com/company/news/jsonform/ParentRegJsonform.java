@@ -16,7 +16,7 @@ public class ParentRegJsonform extends AbstractJsonform {
 	
 	private Integer type;
 	
-
+	private String smscode;//短信验证码
 
 	public Integer getType() {
 		return type;
@@ -41,6 +41,14 @@ public class ParentRegJsonform extends AbstractJsonform {
 
 	public void setTel(String tel) {
 		this.tel = tel;
+	}
+
+	public String getSmscode() {
+		return smscode;
+	}
+
+	public void setSmscode(String smscode) {
+		this.smscode = smscode;
 	}
 
 
