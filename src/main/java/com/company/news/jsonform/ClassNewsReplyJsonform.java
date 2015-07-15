@@ -17,10 +17,21 @@ public class ClassNewsReplyJsonform extends AbstractJsonform {
 
 	private String newsuuid;// 品牌名称
 	private String uuid;// 品牌名称
-
+	private Integer type;//点赞类型 0：互动 1：公告 2：课程表 3：食谱
 	public String getUuid() {
 		return uuid;
 	}
+
+
+	public Integer getType() {
+		return type;
+	}
+
+
+	public void setType(Integer type) {
+		this.type = type;
+	}
+
 
 	public void setUuid(String uuid) {
 		this.uuid = uuid;

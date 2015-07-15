@@ -14,12 +14,22 @@ public class ParentRegJsonform extends AbstractJsonform {
 
 	private String tel;// 电话号码。【必填】
 	
+	private String name;// 电话号码。【必填】
+	
 	private Integer type;
 	
 	private String smscode;//短信验证码
 
 	public Integer getType() {
 		return type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public void setType(Integer type) {
