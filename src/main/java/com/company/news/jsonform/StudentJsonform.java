@@ -63,25 +63,25 @@ public class StudentJsonform extends AbstractJsonform {
 	private String other_tel;// email
 
 	
-	private String ma_name;// email
+	private String ma_name;// 妈妈姓名
 
 	
-	private String ba_name;// email
+	private String ba_name;// 爸爸姓名
 
 	
-	private String address;// email
+	private String address;// 家庭住址
 
 	
-	private String note;// email
+	private String note;// 备注（3行）
 	
 	
-	private String idcard;// email
+	private String idcard;// 
 	
 	
-	private String ma_work;// email
+	private String ma_work;// 妈妈的工作
 
 	
-	private String ba_work;// email
+	private String ba_work;// 爸爸的工作
 	
 	public String getMa_name() {
 		return ma_name;
