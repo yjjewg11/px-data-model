@@ -26,7 +26,7 @@ public class MessageJsonform extends AbstractJsonform {
 	  
 	  private String message;//电话
 	  
-	  private Integer type;//类型'0:普通通知 1:内部通知 2：班级通知',
+	  private Integer type;//
 
 	public String getSend_user() {
 		return send_user;
