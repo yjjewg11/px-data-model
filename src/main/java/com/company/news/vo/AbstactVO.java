@@ -14,6 +14,6 @@ public class AbstactVO implements Serializable {
         if(path!=null&&path.indexOf(isAvidPathMatch)>=0){
             dd= true;
         }
-        System.out.printf("dd==="+dd);
+        System.out.println("dd==="+dd);
     }
 }

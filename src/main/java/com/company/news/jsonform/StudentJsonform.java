@@ -14,16 +14,9 @@ import java.sql.Timestamp;
  */
 public class StudentJsonform extends AbstractJsonform {
 	private String uuid;// 登录名。手机号码或邮箱
+
+	private String classuuid;// email
 	
-	public String getUuid() {
-		return uuid;
-	}
-
-
-	public void setUuid(String uuid) {
-		this.uuid = uuid;
-	}
-
 
 	private String loginname;// 登录名。手机号码或邮箱
 	
@@ -83,6 +76,16 @@ public class StudentJsonform extends AbstractJsonform {
 	
 	private String ba_work;// 爸爸的工作
 	
+	
+	public String getUuid() {
+		return uuid;
+	}
+
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
+
 	public String getMa_name() {
 		return ma_name;
 	}
@@ -306,6 +309,5 @@ public class StudentJsonform extends AbstractJsonform {
 	}
 
 
-	private String classuuid;// email
 	
 }
