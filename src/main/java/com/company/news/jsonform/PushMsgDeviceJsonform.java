@@ -23,7 +23,7 @@ public class PushMsgDeviceJsonform extends AbstractJsonform {
 	}
 	public void setType(Integer type) {
 		this.type = type;
-	}
+	} 
 	public String getDevice_type() {
 		return device_type;
 	}
