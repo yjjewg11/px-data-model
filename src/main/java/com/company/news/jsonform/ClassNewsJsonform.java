@@ -17,7 +17,7 @@ import java.util.List;
  * 
  */
 public class ClassNewsJsonform extends AbstractJsonform {
-
+	private String share_url;// 分享地址.//非数据库字段.
 	private String uuid;// 品牌名称
 	
 	private String classuuid;// 品牌名称
@@ -28,16 +28,6 @@ public class ClassNewsJsonform extends AbstractJsonform {
 	private String create_user;// 品牌名称
 	private Timestamp create_time;// 创建时间
 	private Timestamp reply_time;// 创建时间
-	
-	public List getDianzanList() {
-		return dianzanList;
-	}
-
-	public void setDianzanList(List dianzanList) {
-		this.dianzanList = dianzanList;
-	}
-
-	private List dianzanList;// 公司全称
 	public Timestamp getCreate_time() {
 		return create_time;
 	}
@@ -121,6 +111,14 @@ public class ClassNewsJsonform extends AbstractJsonform {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public String getShare_url() {
+		return share_url;
+	}
+
+	public void setShare_url(String share_url) {
+		this.share_url = share_url;
 	}
 	
 
