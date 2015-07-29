@@ -1,8 +1,10 @@
 package com.company.news.jsonform;
 
+import javax.persistence.Column;
+
 
 public class PushMsgDeviceJsonform extends AbstractJsonform {
-	
+	private String group_uuid;// 组织名
 	private String user_uuid;// 关联 用户uuid.
 	
 	private Integer type;//1:表示家长版本,2表示老师版本.
@@ -41,6 +43,12 @@ public class PushMsgDeviceJsonform extends AbstractJsonform {
 	}
 	public void setStatus(Integer status) {
 		this.status = status;
+	}
+	public String getGroup_uuid() {
+		return group_uuid;
+	}
+	public void setGroup_uuid(String group_uuid) {
+		this.group_uuid = group_uuid;
 	}
 	
 	
