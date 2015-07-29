@@ -1,7 +1,5 @@
 package com.company.news.jsonform;
 
-import javax.persistence.Column;
-
 
 public class PushMsgDeviceJsonform extends AbstractJsonform {
 	private String group_uuid;// 组织名
