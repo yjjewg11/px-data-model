@@ -28,6 +28,9 @@ public class ClassNewsJsonform extends AbstractJsonform {
 	private String create_user;// 品牌名称
 	private Timestamp create_time;// 创建时间
 	private Timestamp reply_time;// 创建时间
+	
+	private String imgs;// img 的uuid多个逗号分割.
+	
 	public Timestamp getCreate_time() {
 		return create_time;
 	}
@@ -119,6 +122,14 @@ public class ClassNewsJsonform extends AbstractJsonform {
 
 	public void setShare_url(String share_url) {
 		this.share_url = share_url;
+	}
+
+	public String getImgs() {
+		return imgs;
+	}
+
+	public void setImgs(String imgs) {
+		this.imgs = imgs;
 	}
 	
 
