@@ -11,6 +11,7 @@ public class TeacherPhone {
 	private String name;
 	private Integer type;//类型,0:院长.1:老师.
 	private String tel;
+	private String img;
 	private String getTeacher_uuid() {
 		return teacher_uuid;
 	}
@@ -34,6 +35,12 @@ public class TeacherPhone {
 	}
 	public void setTel(String tel) {
 		this.tel = tel;
+	}
+	public String getImg() {
+		return img;
+	}
+	public void setImg(String img) {
+		this.img = img;
 	}
 	
 }
