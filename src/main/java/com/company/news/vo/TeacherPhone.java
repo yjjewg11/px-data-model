@@ -12,7 +12,8 @@ public class TeacherPhone {
 	private Integer type;//类型,0:院长.1:老师.
 	private String tel;
 	private String img;
-	private String getTeacher_uuid() {
+	
+	public String getTeacher_uuid() {
 		return teacher_uuid;
 	}
 	public void setTeacher_uuid(String teacher_uuid) {
