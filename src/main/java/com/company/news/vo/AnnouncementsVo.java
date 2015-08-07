@@ -3,6 +3,9 @@ package com.company.news.vo;
 import java.sql.Timestamp;
 
 
+import com.company.news.query.PageQueryResult;
+
+
 
 public class AnnouncementsVo{
 	  private String uuid;//品牌名称
@@ -26,6 +29,11 @@ public class AnnouncementsVo{
 
 	  private String classuuids;
 	  
+
+	private PageQueryResult replyPage;// 回复第一页数据
+	private DianzanListVO dianzan;// 点赞数据
+	private String classnames;
+	  
 	  public String getClassuuids() {
 		return classuuids;
 	}
@@ -46,7 +54,7 @@ public class AnnouncementsVo{
 		this.uuid = uuid;
 	}
 
-	private String classnames;
+	
 	  
 	public Timestamp getCreate_time() {
 		return create_time;
@@ -95,6 +103,18 @@ public class AnnouncementsVo{
 	}
 	public void setGroupuuid(String groupuuid) {
 		this.groupuuid = groupuuid;
+	}
+	public PageQueryResult getReplyPage() {
+		return replyPage;
+	}
+	public void setReplyPage(PageQueryResult replyPage) {
+		this.replyPage = replyPage;
+	}
+	public DianzanListVO getDianzan() {
+		return dianzan;
+	}
+	public void setDianzan(DianzanListVO dianzan) {
+		this.dianzan = dianzan;
 	}
 	  
 
