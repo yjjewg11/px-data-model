@@ -1,10 +1,18 @@
 package com.company.news.query;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PageQueryResult implements Serializable{
   
+	 public PageQueryResult() {
+		    super();
+		    this.pageSize = 0;
+		    this.pageNo = 0;
+		    this.data = new ArrayList();
+		    this.totalCount = 0;
+		  }
   public PageQueryResult(int pageSize, long pageNo, List data, long totalCount) {
     super();
     this.pageSize = pageSize;
