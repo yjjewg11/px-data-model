@@ -18,6 +18,13 @@ public class ClassNewsReplyJsonform extends AbstractJsonform {
 	private String newsuuid;// 品牌名称
 	private String uuid;// 品牌名称
 	private Integer type;//点赞类型 0：互动 1：公告 2：课程表 3：食谱
+	
+	private String content;// 公司全称
+	private String create_user;// 品牌名称
+
+	private String create_useruuid;// 公司全称
+	private String create_img;// 创建人头像
+	
 	public String getUuid() {
 		return uuid;
 	}
@@ -37,10 +44,6 @@ public class ClassNewsReplyJsonform extends AbstractJsonform {
 		this.uuid = uuid;
 	}
 
-	private String content;// 公司全称
-	private String create_user;// 品牌名称
-
-	private String create_useruuid;// 公司全称
 
 	public String getNewsuuid() {
 		return newsuuid;
@@ -72,6 +75,16 @@ public class ClassNewsReplyJsonform extends AbstractJsonform {
 
 	public void setCreate_useruuid(String create_useruuid) {
 		this.create_useruuid = create_useruuid;
+	}
+
+
+	public String getCreate_img() {
+		return create_img;
+	}
+
+
+	public void setCreate_img(String create_img) {
+		this.create_img = create_img;
 	}
 	
 
