@@ -5,7 +5,7 @@ public class PaginationData {
 
     private String orderType;
 
-    public static final int DEFAULT_PAGESIZE = 20;
+    public static final int DEFAULT_PAGESIZE = 10;
 
     private int pageSize = DEFAULT_PAGESIZE;
 
