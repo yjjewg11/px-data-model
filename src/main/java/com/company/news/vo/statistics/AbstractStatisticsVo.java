@@ -11,9 +11,19 @@ public abstract class AbstractStatisticsVo {
 	//图表副标题
 	private String title_subtext;
 	//图表 维度数据
-	private String legend_data;	
+	private String legend_data;		
+	//图表 纵坐标数据
+	private String yAxis_data;
 	
 	
+	
+	
+	public String getyAxis_data() {
+		return yAxis_data;
+	}
+	public void setyAxis_data(String yAxis_data) {
+		this.yAxis_data = yAxis_data;
+	}
 	public String getLegend_data() {
 		return legend_data;
 	}
