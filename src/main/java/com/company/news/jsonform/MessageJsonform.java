@@ -22,6 +22,8 @@ public class MessageJsonform extends AbstractJsonform {
 	  
 	  private String revice_useruuid;//公司全称
 	  
+	  private String send_userimg;//发送人头像
+	  
 	  private String title;//坐标
 	  
 	  private String message;//电话
@@ -102,6 +104,14 @@ public class MessageJsonform extends AbstractJsonform {
 
 	public void setType(Integer type) {
 		this.type = type;
+	}
+
+	public String getSend_userimg() {
+		return send_userimg;
+	}
+
+	public void setSend_userimg(String send_userimg) {
+		this.send_userimg = send_userimg;
 	}
 	  
 
