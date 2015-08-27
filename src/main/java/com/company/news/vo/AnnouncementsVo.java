@@ -26,7 +26,7 @@ public class AnnouncementsVo{
 	  
 	  private String groupuuid;//坐标	 
 	  
-
+	  private Integer status;//类型'0:发布,1:未发布.2:屏蔽',
 	  private String classuuids;
 	  
 
@@ -115,6 +115,12 @@ public class AnnouncementsVo{
 	}
 	public void setDianzan(DianzanListVO dianzan) {
 		this.dianzan = dianzan;
+	}
+	public Integer getStatus() {
+		return status;
+	}
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
 	  
 
