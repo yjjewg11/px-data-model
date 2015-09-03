@@ -24,7 +24,8 @@ public class GroupRegJsonform extends UserRegJsonform {
 	private String map_point;// 坐标
 	private String link_tel;// 电话
 	private Integer type;// 机构类型
-	private String description;//  
+	private String description;//
+	 private String img;//组织logo
 
 
 	public String getDescription() {
@@ -81,6 +82,14 @@ public class GroupRegJsonform extends UserRegJsonform {
 
 	public void setLink_tel(String linkTel) {
 		link_tel = linkTel;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 
 
