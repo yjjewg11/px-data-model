@@ -9,6 +9,7 @@ public class GourpLeaderMsgVO implements Serializable {
 	private String send_useruuid;
 	private String send_user;
 	private String count;
+	private String last_time;
 	public String getRevice_useruuid() {
 		return revice_useruuid;
 	}
@@ -38,5 +39,11 @@ public class GourpLeaderMsgVO implements Serializable {
 	}
 	public void setCount(String count) {
 		this.count = count;
+	}
+	public String getLast_time() {
+		return last_time;
+	}
+	public void setLast_time(String last_time) {
+		this.last_time = last_time;
 	}
 }
