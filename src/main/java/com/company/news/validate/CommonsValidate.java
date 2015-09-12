@@ -1,5 +1,8 @@
 package com.company.news.validate;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -93,6 +96,23 @@ public class CommonsValidate {
   public static boolean checkQQ(String QQ) {
     String regex = "^[1-9][0-9]{4,} $";
     return check(QQ, regex);
+  }
+
+  
+  public static final DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+  /**
+   * 日期格式是否合法
+   * 
+   * @param QQ
+   * @return
+   */
+  public static boolean checkDate(String str) {
+	  try{
+	        Date date = (Date)formatter.parse(str);
+	        return str.equals(formatter.format(date));
+	    }catch(Exception e){
+	       return false;
+	    }
   }
 
 }
