@@ -1,5 +1,8 @@
 package com.company.news.validate;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -52,13 +55,13 @@ public class CommonsValidate {
    * 
    * 移动号码段:139、138、137、136、135、134、150、151、152、157、158、159、182、183、187、188、147
    * 联通号码段:130、131、132、136、185、186、145 电信号码段:133、153、180、189
-   * 
+   * 17号段.中国联通开通4G并使用176子号段进行4G放号。自此，三大运营商的4G号码已全部亮相，均属于17号段
    * @param cellphone
    * @return
    */
   public static boolean checkCellphone(String cellphone) {
    // String regex = "^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,1-9]))\\d{8}$";
-    String regex = "^((13[0-9])|(14[0-9])|(15[0-9])|(18[0-9]))\\d{8}$";
+    String regex = "^((17[0-9])|(13[0-9])|(14[0-9])|(15[0-9])|(18[0-9]))\\d{8}$";
     return check(cellphone, regex);
   }
 
@@ -93,6 +96,23 @@ public class CommonsValidate {
   public static boolean checkQQ(String QQ) {
     String regex = "^[1-9][0-9]{4,} $";
     return check(QQ, regex);
+  }
+
+  
+  public static final DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+  /**
+   * 日期格式是否合法
+   * 
+   * @param QQ
+   * @return
+   */
+  public static boolean checkDate(String str) {
+	  try{
+	        Date date = (Date)formatter.parse(str);
+	        return str.equals(formatter.format(date));
+	    }catch(Exception e){
+	       return false;
+	    }
   }
 
 }
