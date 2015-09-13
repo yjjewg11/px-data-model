@@ -24,6 +24,8 @@ public class UserTeacherJsonform extends AbstractJsonform {
 	
 	private String idcard;// 身份证号码
 	
+	private String nation;// 民族
+	
 	private String introduction;// 电话号码。
 	
 	private String useruuid;// 关联用户uuid
@@ -194,6 +196,14 @@ public class UserTeacherJsonform extends AbstractJsonform {
 
 	public void setNote(String note) {
 		this.note = note;
+	}
+
+	public String getNation() {
+		return nation;
+	}
+
+	public void setNation(String nation) {
+		this.nation = nation;
 	}
 	
 }
