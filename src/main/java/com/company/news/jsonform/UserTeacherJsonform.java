@@ -28,7 +28,7 @@ public class UserTeacherJsonform extends AbstractJsonform {
 	
 	private String useruuid;// 关联用户uuid
 	
-	private Timestamp birthday;// 最后一次登录时间。
+	private String birthday;// 最后一次登录时间。
 	
 	private String zhiwu;// 职务.默认:老师.50字符
 	
@@ -100,11 +100,11 @@ public class UserTeacherJsonform extends AbstractJsonform {
 		this.useruuid = useruuid;
 	}
 
-	public Timestamp getBirthday() {
+	public String getBirthday() {
 		return birthday;
 	}
 
-	public void setBirthday(Timestamp birthday) {
+	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
 
