@@ -12,7 +12,7 @@ import java.sql.Timestamp;
  * @author Administrator
  * 
  */
-public class StudentJsonform extends AbstractStudentJsonform {
+public class PxStudentJsonform extends AbstractStudentJsonform {
 
 	
 }
