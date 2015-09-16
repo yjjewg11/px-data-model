@@ -7,5 +7,13 @@ package com.company.news.jsonform;
  *
  */
 public class AbstractJsonform implements java.io.Serializable{
-  
+	private String uuid;// 昵称
+	
+	  public String getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
 }

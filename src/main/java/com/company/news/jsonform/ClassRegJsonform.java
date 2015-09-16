@@ -41,15 +41,7 @@ public class ClassRegJsonform extends AbstractJsonform {
 	}
 
 
-	private String uuid;// 昵称
-	
-	  public String getUuid() {
-		return uuid;
-	}
 
-	public void setUuid(String uuid) {
-		this.uuid = uuid;
-	}
 
 
 	  private String create_user;//品牌名称
