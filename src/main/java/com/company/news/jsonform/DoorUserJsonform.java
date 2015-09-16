@@ -15,6 +15,8 @@ public class DoorUserJsonform extends AbstractJsonform {
 
 	private String cardid;// 卡ID
 	
+	private String userid;// 用户编码
+	
 	private String userName;// 用户名
 	
 	private String idNo;// 身份证
@@ -57,6 +59,14 @@ public class DoorUserJsonform extends AbstractJsonform {
 
 	public void setIdNo(String idNo) {
 		this.idNo = idNo;
+	}
+
+	public String getUserid() {
+		return userid;
+	}
+
+	public void setUserid(String userid) {
+		this.userid = userid;
 	}
 
 
