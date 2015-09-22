@@ -8,6 +8,7 @@ package com.company.news.jsonform;
  */
 public class AbstractJsonform implements java.io.Serializable{
 	private String uuid;// 昵称
+	private String group_type;//组织 
 	
 	  public String getUuid() {
 		return uuid;
