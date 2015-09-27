@@ -7,6 +7,7 @@ package com.company.news.jsonform;
  */
 public class PxCourseJsonform extends AbstractJsonform {
 	
+	private String courseuuid;// 关联对外发布课程
 	private String groupuuid;//培训机构uuid
 	
 	private Integer type;// 类型.英语,舞蹈,美术
@@ -86,6 +87,12 @@ public class PxCourseJsonform extends AbstractJsonform {
 	}
 	public void setGroupuuid(String groupuuid) {
 		this.groupuuid = groupuuid;
+	}
+	public String getCourseuuid() {
+		return courseuuid;
+	}
+	public void setCourseuuid(String courseuuid) {
+		this.courseuuid = courseuuid;
 	}
 
 }
