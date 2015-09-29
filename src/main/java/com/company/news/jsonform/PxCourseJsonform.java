@@ -22,9 +22,9 @@ public class PxCourseJsonform extends AbstractJsonform {
 	
 	private String context;//课程详细内容介绍.(html).
 	
-	private String fees;//收费价格(可以不填写)
+	private Double fees;//收费价格(可以不填写)
 	
-	private String discountfees;//优惠价格(可以不填写)
+	private Double discountfees;//优惠价格(可以不填写)
 	
 	private String status;// 发布状态:0:发布.1:不发布.
 	
@@ -64,16 +64,16 @@ public class PxCourseJsonform extends AbstractJsonform {
 	public void setContext(String context) {
 		this.context = context;
 	}
-	public String getFees() {
+	public Double getFees() {
 		return fees;
 	}
-	public void setFees(String fees) {
+	public void setFees(Double fees) {
 		this.fees = fees;
 	}
-	public String getDiscountfees() {
+	public Double getDiscountfees() {
 		return discountfees;
 	}
-	public void setDiscountfees(String discountfees) {
+	public void setDiscountfees(Double discountfees) {
 		this.discountfees = discountfees;
 	}
 	public String getStatus() {
