@@ -23,6 +23,8 @@ public class PxTeachingPlanJsonform extends AbstractJsonform {
 	private String duration;// 课程时长
 
 	private String name;// 课程名称
+	
+	private String address;// 上课地点
 
 	public String getName() {
 		return name;
@@ -30,6 +32,14 @@ public class PxTeachingPlanJsonform extends AbstractJsonform {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public String getPlandateStr() {
