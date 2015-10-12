@@ -11,6 +11,16 @@ public class PxClassRegJsonform extends AbstractJsonform {
 	private String name;// 昵称
 
 	private String groupuuid;//
+	
+	private String courseuuid;// 关联对外发布课程 培训机构创建班级必须指定
+
+	public String getCourseuuid() {
+		return courseuuid;
+	}
+
+	public void setCourseuuid(String courseuuid) {
+		this.courseuuid = courseuuid;
+	}
 
 	private String headTeacher;// 电话号码。【必填】
 
