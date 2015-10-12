@@ -1,5 +1,7 @@
 package com.company.news.jsonform;
 
+import javax.persistence.Column;
+
 
 /**
  * 对外发布课程
@@ -9,7 +11,13 @@ public class PxCourseJsonform extends AbstractJsonform {
 	
 	private String courseuuid;// 关联对外发布课程
 	private String groupuuid;//培训机构uuid
-	
+	private String logo;//
+	public String getLogo() {
+		return logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
 	private Integer type;// 类型.英语,舞蹈,美术
 	
 	private String subtype;//子类型,手动输入:比如拉丁舞.
