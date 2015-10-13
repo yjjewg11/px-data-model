@@ -1,6 +1,5 @@
 package com.company.news.jsonform;
 
-import javax.persistence.Column;
 
 
 /**

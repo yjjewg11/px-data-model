@@ -9,6 +9,12 @@ package com.company.news.jsonform;
  */
 public class AccountsJsonform extends AbstractJsonform {
 
+	public String getInvoice_num() {
+		return invoice_num;
+	}
+	public void setInvoice_num(String invoice_num) {
+		this.invoice_num = invoice_num;
+	}
 	private String uuid;// 品牌名称
 
 	private String classuuid;// 品牌名称
@@ -21,6 +27,7 @@ public class AccountsJsonform extends AbstractJsonform {
 	private Double num;
 	private Integer type;
 	private String  studentuuid;
+	private String invoice_num;// 发票号
 
 	public String getCreate_user() {
 		return create_user;
