@@ -7,6 +7,7 @@ import java.sql.Timestamp;
 
 
 
+
 /**
  * 用户注册，body传入json数据转对象。
  * 
@@ -14,8 +15,14 @@ import java.sql.Timestamp;
  * 
  */
 public class AppraiseJsonform extends AbstractJsonform {
-	  
-
+	private String ext_uuid;// 关联uuid
+	private String class_uuid;// 关联具体课程班级
+	private String content;// 内容(HTML)
+	private String create_user;// 评价人
+	private String create_useruuid;//  评价人(uuid)
+	private Integer type;//
+	private Integer score;//
+	
 
 	public String getExt_uuid() {
 		return ext_uuid;
@@ -57,17 +64,7 @@ public class AppraiseJsonform extends AbstractJsonform {
 		this.type = type;
 	}
 
-	private String ext_uuid;// 关联教师teacheruuid
 	
-	private String content;// 内容(HTML)
-	
-	private String create_user;// 评价人
-	
-	private String create_useruuid;//  评价人(uuid)
-	
-	private Integer type;//
-
-	private Integer score;//
 
 	public Integer getScore() {
 		return score;
@@ -75,6 +72,14 @@ public class AppraiseJsonform extends AbstractJsonform {
 
 	public void setScore(Integer score) {
 		this.score = score;
+	}
+
+	public String getClass_uuid() {
+		return class_uuid;
+	}
+
+	public void setClass_uuid(String class_uuid) {
+		this.class_uuid = class_uuid;
 	}
 
 }

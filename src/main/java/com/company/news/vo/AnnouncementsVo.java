@@ -25,6 +25,7 @@ public class AnnouncementsVo{
 	  private Integer type;//类型'0:普通通知 1:内部通知 2：班级通知',
 	  
 	  private String groupuuid;//坐标	 
+	  private String url;//支持直接复制url方式.长度限制256.
 	  
 	  private Integer status;//类型'0:发布,1:未发布.2:屏蔽',
 	  private String classuuids;
@@ -121,6 +122,12 @@ public class AnnouncementsVo{
 	}
 	public void setStatus(Integer status) {
 		this.status = status;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	  
 
