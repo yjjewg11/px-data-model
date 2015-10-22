@@ -1,11 +1,5 @@
 package com.company.news.jsonform;
 
-import java.sql.Timestamp;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
 
 
 public class OperateJsonform extends AbstractJsonform {
