@@ -2,7 +2,6 @@ package com.company.news.vo;
 
 import java.sql.Timestamp;
 
-
 import com.company.news.query.PageQueryResult;
 
 
@@ -21,7 +20,8 @@ public class AnnouncementsVo{
 	  private String title;//坐标
 	  
 	  private String message;//电话
-	  
+	  private Timestamp start_time;//开始时间
+	  private Timestamp end_time;//结束时间
 	  private Integer type;//类型'0:普通通知 1:内部通知 2：班级通知',
 	  
 	  private String groupuuid;//坐标	 
@@ -128,6 +128,18 @@ public class AnnouncementsVo{
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	public Timestamp getStart_time() {
+		return start_time;
+	}
+	public void setStart_time(Timestamp start_time) {
+		this.start_time = start_time;
+	}
+	public Timestamp getEnd_time() {
+		return end_time;
+	}
+	public void setEnd_time(Timestamp end_time) {
+		this.end_time = end_time;
 	}
 	  
 

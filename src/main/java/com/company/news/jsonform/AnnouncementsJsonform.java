@@ -1,6 +1,5 @@
 package com.company.news.jsonform;
 
-import java.sql.Timestamp;
 
 
 
@@ -15,8 +14,21 @@ import java.sql.Timestamp;
 public class AnnouncementsJsonform extends AbstractJsonform {
 	  private String create_user;//
 
+	  private String start_timeStr;//开始时间
+	  private String end_timeStr;//结束时间
 
-
+	public String getStart_timeStr() {
+		return start_timeStr;
+	}
+	public void setStart_timeStr(String start_timeStr) {
+		this.start_timeStr = start_timeStr;
+	}
+	public String getEnd_timeStr() {
+		return end_timeStr;
+	}
+	public void setEnd_timeStr(String end_timeStr) {
+		this.end_timeStr = end_timeStr;
+	}
 	public String getCreate_user() {
 		return create_user;
 	}
