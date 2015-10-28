@@ -2,6 +2,7 @@ package com.company.news.jsonform;
 
 
 
+
 /**
  * 用户注册，body传入json数据转对象。
  * 
@@ -26,7 +27,8 @@ public class GroupRegJsonform extends UserRegJsonform {
 	private Integer type;// 机构类型
 	private String description;//
 	 private String img;//组织logo
-
+	 private String prov;//省,比如:四川
+	  private String city;//市:比如:成都
 
 	public String getDescription() {
 		return description;
@@ -90,6 +92,22 @@ public class GroupRegJsonform extends UserRegJsonform {
 
 	public void setImg(String img) {
 		this.img = img;
+	}
+
+	public String getProv() {
+		return prov;
+	}
+
+	public void setProv(String prov) {
+		this.prov = prov;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
 	}
 
 
