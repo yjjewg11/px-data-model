@@ -31,6 +31,8 @@ public class PxTeacherJsonform extends AbstractJsonform {
 	private Integer type;// 类型.英语,舞蹈,美术.(同课程分类)
 	
 	private Integer status;// 是否公开发布.1:未发布.0:发布.同课程发布.
+	//关联其他表
+	private String courseuuid;// 关联课程表
 
 	public String getGroupuuid() {
 		return groupuuid;
@@ -103,6 +105,14 @@ public class PxTeacherJsonform extends AbstractJsonform {
 
 	public void setCourse_title(String course_title) {
 		this.course_title = course_title;
+	}
+
+	public String getCourseuuid() {
+		return courseuuid;
+	}
+
+	public void setCourseuuid(String courseuuid) {
+		this.courseuuid = courseuuid;
 	}
 	
 	
