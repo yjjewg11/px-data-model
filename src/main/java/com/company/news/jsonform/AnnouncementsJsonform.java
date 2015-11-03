@@ -67,9 +67,17 @@ public class AnnouncementsJsonform extends AbstractJsonform {
 	  private Integer type;//类型'0:普通通知 1:内部通知 2：班级通知',
 	  
 	  private String groupuuid;//机构  
+	  
+	  private String url;//支持直接复制url方式.长度限制256.
 
 	public Integer getIsimportant() {
 		return isimportant;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	public void setIsimportant(Integer isimportant) {
 		this.isimportant = isimportant;
