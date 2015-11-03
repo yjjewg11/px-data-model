@@ -29,6 +29,7 @@ public class GroupRegJsonform extends UserRegJsonform {
 	 private String img;//组织logo
 	 private String prov;//省,比如:四川
 	  private String city;//市:比如:成都
+	  private String summary;// 摘要,100字内
 
 	public String getDescription() {
 		return description;
@@ -108,6 +109,14 @@ public class GroupRegJsonform extends UserRegJsonform {
 
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getSummary() {
+		return summary;
+	}
+
+	public void setSummary(String summary) {
+		this.summary = summary;
 	}
 
 

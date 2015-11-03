@@ -25,6 +25,8 @@ public class BaseDataListJsonform extends AbstractJsonform {
 	  private String typeuuid;//早餐
 	  
 	  private Integer enable;//早餐
+	  
+	  private Integer ind;//排序默认0.
 
 	public String getDatakey() {
 		return datakey;
@@ -72,6 +74,14 @@ public class BaseDataListJsonform extends AbstractJsonform {
 
 	public void setEnable(Integer enable) {
 		this.enable = enable;
+	}
+
+	public Integer getInd() {
+		return ind;
+	}
+
+	public void setInd(Integer ind) {
+		this.ind = ind;
 	}
 
 
