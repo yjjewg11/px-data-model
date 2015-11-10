@@ -25,7 +25,14 @@ public class PxTeachingPlanJsonform extends AbstractJsonform {
 	private String name;// 课程名称
 	
 	private String address;// 上课地点
-
+	
+	//增加批量添加周期性教学计划.
+	private String per_start_date;// 时间.年月日
+	private String per_num;// 次数
+	private String per_week;// 每周上课
+	private String per_time;// 上课时间时分秒
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -88,6 +95,38 @@ public class PxTeachingPlanJsonform extends AbstractJsonform {
 
 	public void setDuration(String duration) {
 		this.duration = duration;
+	}
+
+	public String getPer_start_date() {
+		return per_start_date;
+	}
+
+	public void setPer_start_date(String per_start_date) {
+		this.per_start_date = per_start_date;
+	}
+
+	public String getPer_num() {
+		return per_num;
+	}
+
+	public void setPer_num(String per_num) {
+		this.per_num = per_num;
+	}
+
+	public String getPer_week() {
+		return per_week;
+	}
+
+	public void setPer_week(String per_week) {
+		this.per_week = per_week;
+	}
+
+	public String getPer_time() {
+		return per_time;
+	}
+
+	public void setPer_time(String per_time) {
+		this.per_time = per_time;
 	}
 
 }
