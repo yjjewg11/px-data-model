@@ -2,6 +2,7 @@ package com.company.news.jsonform;
 
 
 
+
 /**
  * 对外发布课程
  * @author liumingquan
@@ -34,7 +35,23 @@ public class PxCourseJsonform extends AbstractJsonform {
 	private Double discountfees;//优惠价格(可以不填写)
 	
 	private String status;// 发布状态:0:发布.1:不发布.
+
+	private Integer age_min;//有效年龄范围最小值（不能小于0）
+
+	private Integer age_max;//有效年龄范围最大值
 	
+	public Integer getAge_min() {
+		return age_min;
+	}
+	public void setAge_min(Integer age_min) {
+		this.age_min = age_min;
+	}
+	public Integer getAge_max() {
+		return age_max;
+	}
+	public void setAge_max(Integer age_max) {
+		this.age_max = age_max;
+	}
 	public Integer getType() {
 		return type;
 	}
