@@ -71,21 +71,12 @@ public class AbstractStudentJsonform  extends AbstractJsonform {
 	
 	private String ba_work;// 爸爸的工作
 	
-	private String staus;// 学生在校状态-0在线-1离线-2毕业
+	private Integer status;// 学生在校状态-0在线-1离线-2毕业
 	
 
 
 
 
-
-	public String getStaus() {
-		return staus;
-	}
-
-
-	public void setStaus(String staus) {
-		this.staus = staus;
-	}
 
 
 	public String getMa_name() {
@@ -312,4 +303,13 @@ public class AbstractStudentJsonform  extends AbstractJsonform {
 
 
 	private String classuuid;// email
+
+	public Integer getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
 }
