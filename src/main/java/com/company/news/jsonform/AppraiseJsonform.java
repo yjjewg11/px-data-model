@@ -22,7 +22,7 @@ public class AppraiseJsonform extends AbstractJsonform {
 	private String create_useruuid;//  评价人(uuid)
 	private Integer type;//
 	private Integer score;//
-	
+	private Integer anonymous;//1表示匿名.0表示不用匿名.
 
 	public String getExt_uuid() {
 		return ext_uuid;
@@ -80,6 +80,14 @@ public class AppraiseJsonform extends AbstractJsonform {
 
 	public void setClass_uuid(String class_uuid) {
 		this.class_uuid = class_uuid;
+	}
+
+	public Integer getAnonymous() {
+		return anonymous;
+	}
+
+	public void setAnonymous(Integer anonymous) {
+		this.anonymous = anonymous;
 	}
 
 }
