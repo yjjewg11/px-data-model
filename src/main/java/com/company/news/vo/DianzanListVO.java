@@ -6,7 +6,7 @@ public class DianzanListVO implements Serializable {
 
 	private Integer  count;
 	private String names;
-	private Boolean canDianzan;
+	private Boolean canDianzan=true;
 	public Integer getCount() {
 		return count;
 	}
