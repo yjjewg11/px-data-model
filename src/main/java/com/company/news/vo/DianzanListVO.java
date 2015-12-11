@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class DianzanListVO implements Serializable {
 
-	private Integer  count;
-	private String names;
+	private Integer  count=0;
+	private String names="";
 	private Boolean canDianzan=true;
 	public Integer getCount() {
 		return count;
