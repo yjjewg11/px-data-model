@@ -31,6 +31,8 @@ public class ClassNewsJsonform extends AbstractJsonform {
 	
 	private String imgs;// img 的uuid多个逗号分割.
 	
+	private String url;//支持直接复制url方式.长度限制256.
+	
 	public Timestamp getCreate_time() {
 		return create_time;
 	}
@@ -130,6 +132,14 @@ public class ClassNewsJsonform extends AbstractJsonform {
 
 	public void setImgs(String imgs) {
 		this.imgs = imgs;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	
 
