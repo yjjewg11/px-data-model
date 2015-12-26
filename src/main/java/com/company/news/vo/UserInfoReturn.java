@@ -11,7 +11,7 @@ public class UserInfoReturn implements java.io.Serializable{
 	
 	private String name;// 昵称
 	
-	private String password;// 密码，md5加密。（UTF-8）
+//	private String password;// 密码，md5加密。（UTF-8）
 	
 	private String tel;// 电话号码。
 	
@@ -100,14 +100,6 @@ public class UserInfoReturn implements java.io.Serializable{
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	public String getTel() {
