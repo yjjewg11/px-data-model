@@ -1,5 +1,7 @@
 package com.company.news.jsonform;
 
+import java.util.List;
+
 
 /**
  * 话题
@@ -12,7 +14,7 @@ public class SnsTopicJsonform extends AbstractJsonform {
 	private String title;// 话题板块.128字符
 	
 	private String content;// HTML
-
+	private List itemList;// 投票列表
 	public Integer getSection_id() {
 		return section_id;
 	}
@@ -36,5 +38,14 @@ public class SnsTopicJsonform extends AbstractJsonform {
 	public void setContent(String content) {
 		this.content = content;
 	}
+
+	public List getItemList() {
+		return itemList;
+	}
+
+	public void setItemList(List itemList) {
+		this.itemList = itemList;
+	}
+
 
 }
