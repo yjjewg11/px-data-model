@@ -1,6 +1,9 @@
 package com.company.news.query;
 
 public class PaginationData {
+	//使用pageTime 分页显示
+	 private String pageTime;
+	 
     private String orderFiled;
 
     private String orderType;
@@ -53,5 +56,11 @@ public class PaginationData {
     public void setPageNo(int pageNo) {
       this.pageNo = pageNo;
     }
+	public String getPageTime() {
+		return pageTime;
+	}
+	public void setPageTime(String pageTime) {
+		this.pageTime = pageTime;
+	}
 
 }
