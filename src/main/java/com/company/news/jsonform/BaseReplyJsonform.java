@@ -17,7 +17,6 @@ public class BaseReplyJsonform extends AbstractJsonform {
 
 	private String to_useruuid;//给指定人回复的回复.
 	private String rel_uuid;// 品牌名称
-	private String uuid;// 品牌名称
 	private Integer type;//点赞类型 0：互动 1：公告 2：课程表 3：食谱
 	private String content;// 公司全称
 	public String getTo_useruuid() {
@@ -31,12 +30,6 @@ public class BaseReplyJsonform extends AbstractJsonform {
 	}
 	public void setRel_uuid(String rel_uuid) {
 		this.rel_uuid = rel_uuid;
-	}
-	public String getUuid() {
-		return uuid;
-	}
-	public void setUuid(String uuid) {
-		this.uuid = uuid;
 	}
 	public Integer getType() {
 		return type;

@@ -1,9 +1,9 @@
 package com.company.news.query;
 
 public class PaginationData {
-	//使用创建时间做分页显示,minTime 取 2016-01-15 13:13 之前的数据.按照创建时间排倒序
+	//使用创建时间做分页显示,minTime 取 %Y-%m-%d-%H-%i-%s之前的数据.按照创建时间排倒序
 	 private String minTime;
-	//使用创建时间做分页显示,maxTime 取 2016-01-15 13:13 之后的数据.按照创建时间排正序
+	//使用创建时间做分页显示,maxTime 取 %Y-%m-%d-%H-%i-%s之后的数据.按照创建时间排正序
 	 private String maxTime;
 	 
     private String orderFiled;
