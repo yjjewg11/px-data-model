@@ -12,7 +12,11 @@ public class FPPhotoItemForm {
 	private String md5;// 唯一表示
 	
 	private String photo_time;//拍摄时间
-
+	
+	private String phone_type;//手机型号.//iPhone 6s,HTC 123.45字符
+	
+	private String phone_uuid;//手机唯一标识.字符64字符.
+	
 	public String getFamily_uuid() {
 		return family_uuid;
 	}
@@ -51,5 +55,21 @@ public class FPPhotoItemForm {
 
 	public void setPhoto_time(String photo_time) {
 		this.photo_time = photo_time;
+	}
+
+	public String getPhone_type() {
+		return phone_type;
+	}
+
+	public void setPhone_type(String phone_type) {
+		this.phone_type = phone_type;
+	}
+
+	public String getPhone_uuid() {
+		return phone_uuid;
+	}
+
+	public void setPhone_uuid(String phone_uuid) {
+		this.phone_uuid = phone_uuid;
 	}
 }
