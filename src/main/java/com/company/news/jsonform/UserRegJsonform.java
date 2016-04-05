@@ -19,6 +19,8 @@ public class UserRegJsonform extends AbstractJsonform {
 	}
 
 	private String name;// 昵称
+	
+	private String  realname;//  真实姓名
 
 	private String password;// 密码，md5加密。（UTF-8）区分大小写
 	

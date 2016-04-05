@@ -10,7 +10,7 @@ public class UserInfoReturn implements java.io.Serializable{
 	private String loginname;// 登录名。手机号码或邮箱
 	
 	private String name;// 昵称
-	
+	private String  realname;//  真实姓名
 //	private String password;// 密码，md5加密。（UTF-8）
 	
 	private String tel;// 电话号码。
@@ -151,5 +151,13 @@ public class UserInfoReturn implements java.io.Serializable{
 
 	public void setCreate_time(Timestamp createTime) {
 		create_time = createTime;
+	}
+
+	public String getRealname() {
+		return realname;
+	}
+
+	public void setRealname(String realname) {
+		this.realname = realname;
 	}
 }
