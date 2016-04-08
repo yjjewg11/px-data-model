@@ -131,4 +131,12 @@ public class UserRegJsonform extends AbstractJsonform {
 		this.email = email;
 	}
 
+	public String getRealname() {
+		return realname;
+	}
+
+	public void setRealname(String realname) {
+		this.realname = realname;
+	}
+
 }
